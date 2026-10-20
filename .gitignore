@@ -1,0 +1,16 @@
+node_modules
+.next
+out
+data
+.env
+.env.local
+*.log
+.DS_Store
+next-env.d.ts
+*.tsbuildinfo
+
+# local tooling / scratch
+.npm-cache
+.chrome-*
+.pip-temp
+pydeps

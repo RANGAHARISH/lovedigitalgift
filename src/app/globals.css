@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: #D7263D;
+  --brand-dark: #A4122A;
+  --brand-soft: #FFD9E0;
+  --rose-bg: #FFF6F7;
+  --ink: #2B1A20;
+  --muted: #6E5A60;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-rosebg font-sans text-ink antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display tracking-tight;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background: #FFD1DA;
+    color: #2B1A20;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 3px;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 16px; /* stops iOS zoom on focus */
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .btn {
+    @apply inline-flex select-none items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition duration-200 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-primary {
+    @apply btn bg-gradient-to-r from-[#D7263D] to-[#F2546B] text-white shadow-soft hover:-translate-y-0.5 hover:shadow-glow active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply btn border border-brand/30 bg-white text-ink shadow-sm hover:-translate-y-0.5 hover:border-brand/60 hover:text-brand-dark;
+  }
+
+  .btn-ghost {
+    @apply btn text-muted hover:bg-brand-soft/60 hover:text-ink;
+  }
+
+  .card {
+    @apply rounded-3xl border border-white bg-white shadow-softer;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-brand/15 bg-white/80 px-3.5 py-1.5 text-xs font-medium text-muted transition hover:border-brand/40 hover:text-ink;
+  }
+
+  .chip-active {
+    @apply border-transparent bg-brand text-white shadow-soft hover:text-white;
+  }
+
+  .field-label {
+    @apply mb-1.5 flex items-baseline justify-between text-sm font-semibold text-ink;
+  }
+
+  .field-input {
+    @apply w-full rounded-2xl border border-brand/15 bg-white px-4 py-2.5 text-sm text-ink shadow-sm transition placeholder:text-muted/60 focus:border-brand focus:outline-none focus:ring-4 focus:ring-brand/10;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-[#D7263D] via-[#F2546B] to-[#FF8FA3] bg-clip-text text-transparent;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(16px) saturate(140%);
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .story {
+    /* full-height story pages that scroll one section at a time */
+    scroll-snap-type: y proximity;
+  }
+
+  .story > section {
+    scroll-snap-align: start;
+  }
+
+  /* Templates render as full-height story sections on gift pages. Inside the
+     editor / template-preview phone frames, cap each section to the frame. */
+  .preview-scope section {
+    min-height: 560px !important;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
