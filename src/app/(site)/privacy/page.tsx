@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "What LoveDigitalGift collects, how your photos and gifts are stored, and the choices you have.",
+  description: "What whishmydear.com collects, how your photos and gifts are stored, and the choices you have.",
 };
 
 const SECTIONS = [
@@ -29,7 +29,7 @@ const SECTIONS = [
   },
   {
     title: "6. Your rights",
-    body: "You can ask for a copy of your data, ask us to correct it, or ask us to delete it by emailing hello@lovedigitalgift.com. Depending on where you live you may have additional statutory rights.",
+    body: "You can ask for a copy of your data, ask us to correct it, or ask us to delete it by emailing hello@whishmydear.com. Depending on where you live you may have additional statutory rights.",
   },
   {
     title: "7. Children",

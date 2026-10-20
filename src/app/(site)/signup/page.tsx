@@ -6,7 +6,7 @@ import { getCurrentUser } from "@/lib/auth";
 
 export const metadata: Metadata = {
   title: "Create your account",
-  description: "Create a free LoveDigitalGift account and start building an interactive digital gift.",
+  description: "Create a free whishmydear.com account and start building an interactive digital gift.",
 };
 
 export default async function SignupPage() {

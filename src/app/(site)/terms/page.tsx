@@ -3,13 +3,13 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
-  description: "The terms that apply when you create or receive a LoveDigitalGift digital gift.",
+  description: "The terms that apply when you create or receive a whishmydear.com digital gift.",
 };
 
 const SECTIONS = [
   {
     title: "1. About this service",
-    body: "LoveDigitalGift lets you build a personalised web page (a “gift”) from a template, add your own text, photos and music, and share it with a unique link or QR code. These terms apply to anyone who creates an account or opens a gift.",
+    body: "whishmydear.com lets you build a personalised web page (a “gift”) from a template, add your own text, photos and music, and share it with a unique link or QR code. These terms apply to anyone who creates an account or opens a gift.",
   },
   {
     title: "2. Your account",
@@ -37,7 +37,7 @@ const SECTIONS = [
   },
   {
     title: "8. Contact",
-    body: "Questions about these terms can be sent to hello@lovedigitalgift.com.",
+    body: "Questions about these terms can be sent to hello@whishmydear.com.",
   },
 ];
 

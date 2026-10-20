@@ -90,8 +90,8 @@ export function Footer() {
 
       <div className="border-t border-brand/10">
         <div className="container-page flex flex-col items-center justify-between gap-2 py-6 text-[11px] tracking-[0.06em] text-muted/90 sm:flex-row">
-          <p>Made with ♥ by LoveDigitalGift</p>
-          <p>© 2026 LoveDigitalGift. All rights reserved.</p>
+          <p>Made with ♥ by whishmydear.com</p>
+          <p>© 2026 whishmydear.com. All rights reserved.</p>
         </div>
       </div>
     </footer>

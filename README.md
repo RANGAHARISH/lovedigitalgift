@@ -1,4 +1,4 @@
-# LoveDigitalGift
+# whishmydear.com
 
 An interactive digital-gift builder: pick a template, add your own words, photos and music, then share a unique link or a customisable QR code (heart or classic square). Includes a dashboard, accounts, legal pages and 28 ready-to-edit templates.
 
@@ -24,7 +24,7 @@ There is a ready-made demo account if you just want to look around:
 
 | Email | Password |
 | --- | --- |
-| `demo@lovedigitalgift.com` | `demo12345` |
+| `demo@whishmydear.com` | `demo12345` |
 
 It owns two published gifts, so the dashboard and public gift page have real content.
 
@@ -210,4 +210,4 @@ Two things to move before a public launch:
 
 ## Credits & disclaimer
 
-The homepage copy and section order follow <https://lovedigitalgift.com/> as recorded in the build spec. The name, logo and testimonials are placeholders; replace them with your own before launching. Music is generated locally, not sampled from commercial recordings.
+The homepage copy and section order follow the original site <https://lovedigitalgift.com/> as recorded in the build spec. This version is rebranded to **whishmydear.com**; the name, logo and testimonials are placeholders you can replace before launch. Music is generated locally, not sampled from commercial recordings.

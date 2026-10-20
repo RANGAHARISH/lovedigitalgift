@@ -120,7 +120,7 @@ export function GiftExperience({ gift }: { gift: GiftExperienceData }) {
             </motion.div>
 
             <p className="absolute bottom-6 z-10 text-[10px] uppercase tracking-[0.24em] text-white/60">
-              LoveDigitalGift
+              whishmydear.com
             </p>
           </motion.div>
         ) : (
@@ -139,7 +139,7 @@ export function GiftExperience({ gift }: { gift: GiftExperienceData }) {
                 className="inline-flex items-center gap-2 rounded-full border border-brand/15 bg-white px-4 py-2 text-[11px] font-medium text-muted shadow-sm transition hover:border-brand/40 hover:text-brand-dark"
               >
                 <LogoMark className="h-5 w-5 rounded-[0.4rem]" />
-                Made with LoveDigitalGift · Create yours
+                Made with whishmydear.com · Create yours
               </Link>
             </div>
           </motion.main>

@@ -63,7 +63,7 @@ def make_og() -> None:
         heart(draw, cx, cy, size, (255, 255, 255, 70))
 
     mark(draw, 72, 58, 84)
-    draw.text((176, 66), "LoveDigitalGift", font=font(FONT_BOLD, 40), fill=(255, 255, 255, 245))
+    draw.text((176, 66), "whishmydear.com", font=font(FONT_BOLD, 40), fill=(255, 255, 255, 245))
 
     draw.text((96, 205), "Share love beautifully", font=font(FONT_SERIF, 86), fill=(255, 255, 255, 255))
     draw.text((96, 305), "with a digital gift", font=font(FONT_SERIF, 86), fill=(255, 255, 255, 255))

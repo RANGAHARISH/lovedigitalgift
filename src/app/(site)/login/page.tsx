@@ -6,7 +6,7 @@ import { getCurrentUser } from "@/lib/auth";
 
 export const metadata: Metadata = {
   title: "Sign in",
-  description: "Sign in to your LoveDigitalGift dashboard to edit and share your digital gifts.",
+  description: "Sign in to your whishmydear.com dashboard to edit and share your digital gifts.",
 };
 
 export default async function LoginPage() {

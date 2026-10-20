@@ -1,16 +1,16 @@
-export const SITE_NAME = "LoveDigitalGift";
+export const SITE_NAME = "whishmydear.com";
 
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://whishmydear.com"
 ).replace(/\/$/, "");
 
 export const CONTACT_EMAIL =
-  process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@lovedigitalgift.com";
+  process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@whishmydear.com";
 
 export const SOCIALS = [
-  { label: "Instagram", href: "https://www.instagram.com/lovedigitalgift", icon: "instagram" as const },
-  { label: "TikTok", href: "https://www.tiktok.com/@lovedigitalgift", icon: "tiktok" as const },
-  { label: "YouTube", href: "https://www.youtube.com/@lovedigitalgift", icon: "youtube" as const },
+  { label: "Instagram", href: "https://www.instagram.com/whishmydear", icon: "instagram" as const },
+  { label: "TikTok", href: "https://www.tiktok.com/@whishmydear", icon: "tiktok" as const },
+  { label: "YouTube", href: "https://www.youtube.com/@whishmydear", icon: "youtube" as const },
 ];
 
 export type MusicTrack = {

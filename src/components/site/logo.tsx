@@ -40,7 +40,7 @@ export function Logo({ className, showText = true }: { className?: string; showT
       <LogoMark className="transition duration-300 group-hover:scale-[1.04] group-hover:shadow-[0_10px_24px_-8px_rgba(215,38,61,0.8)]" />
       {showText ? (
         <span className="text-[17px] font-semibold leading-none tracking-[-0.02em] text-ink">
-          Love<span className="text-brand">Digital</span>Gift
+          whishmydear<span className="text-brand">.com</span>
         </span>
       ) : null}
     </Link>

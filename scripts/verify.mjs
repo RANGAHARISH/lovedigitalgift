@@ -96,7 +96,7 @@ async function main() {
   check("unknown gift returns 404", missingGift.status === 404);
 
   // ---- Account ------------------------------------------------------------
-  const credentials = { email: "demo@lovedigitalgift.com", password: "demo12345", name: "Demo" };
+  const credentials = { email: "demo@whishmydear.com", password: "demo12345", name: "Demo" };
   let signup = await request("/api/auth/signup", {
     method: "POST",
     headers: { "Content-Type": "application/json" },

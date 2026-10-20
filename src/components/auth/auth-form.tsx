@@ -106,7 +106,7 @@ export function AuthForm({ mode }: { mode: Mode }) {
       </button>
 
       <p className="pt-1 text-center text-sm text-muted">
-        {isSignup ? "Already have an account?" : "New to LoveDigitalGift?"}{" "}
+        {isSignup ? "Already have an account?" : "New to whishmydear?"}{" "}
         <Link
           href={`/${isSignup ? "login" : "signup"}${next !== "/dashboard" ? `?next=${encodeURIComponent(next)}` : ""}`}
           className="font-semibold text-brand-dark hover:underline"

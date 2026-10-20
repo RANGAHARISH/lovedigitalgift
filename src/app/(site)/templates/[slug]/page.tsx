@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     title: `${template.name} — interactive gift template`,
     description: template.description,
     openGraph: {
-      title: `${template.name} · LoveDigitalGift`,
+      title: `${template.name} · whishmydear.com`,
       description: template.description,
       images: ["/og-image.png"],
     },

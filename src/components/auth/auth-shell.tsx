@@ -22,7 +22,7 @@ export function AuthShell({
 
         <Link href="/" className="relative inline-flex items-center gap-2.5 text-sm font-semibold text-white/95">
           <LogoMark tone="light" className="h-8 w-8 rounded-[0.7rem]" />
-          LoveDigitalGift
+          whishmydear.com
         </Link>
 
         <div className="relative">
@@ -47,7 +47,7 @@ export function AuthShell({
           </ul>
         </div>
 
-        <p className="relative text-[11px] tracking-[0.06em] text-white/65">© 2026 LoveDigitalGift. All rights reserved.</p>
+        <p className="relative text-[11px] tracking-[0.06em] text-white/65">© 2026 whishmydear.com. All rights reserved.</p>
       </div>
 
       <div className="flex items-center justify-center px-5 py-16 sm:px-10">

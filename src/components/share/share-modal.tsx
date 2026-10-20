@@ -116,9 +116,9 @@ export function ShareModal({ open, onClose, giftId, initialQr, title, onSaveQr }
     setError(null);
     try {
       if (kind === "png") {
-        await downloadQrPng(qr.svg, `lovedigitalgift-${giftId}.png`);
+        await downloadQrPng(qr.svg, `whishmydear-${giftId}.png`);
       } else {
-        downloadQrSvg(qr.svg, `lovedigitalgift-${giftId}.svg`);
+        downloadQrSvg(qr.svg, `whishmydear-${giftId}.svg`);
       }
     } catch {
       setError("The download failed in this browser. Try the SVG instead.");

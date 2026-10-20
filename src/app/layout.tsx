@@ -9,7 +9,7 @@ import { SITE_NAME, SITE_URL } from "@/lib/config";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "LoveDigitalGift - Create Beautiful Interactive Gift Websites",
+    default: "whishmydear.com - Create Beautiful Interactive Gift Websites",
     template: `%s · ${SITE_NAME}`,
   },
   description:
@@ -34,14 +34,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: "LoveDigitalGift - Create Beautiful Interactive Gift Websites",
+    title: "whishmydear.com - Create Beautiful Interactive Gift Websites",
     description:
       "Create personalized digital gifts for any occasion. Interactive templates with photos, music, and custom messages.",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: SITE_NAME }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "LoveDigitalGift - Create Beautiful Interactive Gift Websites",
+    title: "whishmydear.com - Create Beautiful Interactive Gift Websites",
     description: "Interactive digital gifts with photos, music and a message that lasts.",
     images: ["/og-image.png"],
   },
