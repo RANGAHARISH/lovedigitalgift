@@ -45,9 +45,9 @@ export default function PrivacyPage() {
   return (
     <div className="bg-white py-14 sm:py-20">
       <div className="container-page max-w-3xl">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-brand">legal</p>
-        <h1 className="mt-3 text-4xl sm:text-5xl">Privacy Policy</h1>
-        <p className="mt-4 text-sm text-muted">Last updated: 1 January 2026</p>
+        <p className="eyebrow">legal</p>
+        <h1 className="mt-3 text-[2.5rem] leading-tight sm:text-[3.2rem]">Privacy Policy</h1>
+        <p className="mt-4 text-[13px] text-muted">Last updated: 1 January 2026</p>
 
         <div className="mt-8 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-xs leading-relaxed text-amber-800">
           <strong>Placeholder text.</strong> Describe your real hosting, retention period and legal basis before
@@ -57,8 +57,8 @@ export default function PrivacyPage() {
         <div className="mt-10 space-y-8">
           {SECTIONS.map((section) => (
             <section key={section.title}>
-              <h2 className="text-lg font-semibold">{section.title}</h2>
-              <p className="mt-2 text-sm leading-relaxed text-muted">{section.body}</p>
+              <h2 className="text-[19px] leading-snug">{section.title}</h2>
+              <p className="mt-2.5 text-[14px] leading-[1.8] text-muted">{section.body}</p>
             </section>
           ))}
         </div>

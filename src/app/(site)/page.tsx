@@ -17,12 +17,12 @@ export default function HomePage() {
       <StatsStrip />
       <HowItWorks />
 
-      <section className="bg-gradient-to-b from-[#FFF8FB] to-white py-20 sm:py-24">
+      <section className="bg-gradient-to-b from-[#FFF8FA] to-white py-20 sm:py-28">
         <div className="container-page">
           <div className="mx-auto max-w-2xl text-center">
-            <span className="text-[11px] font-semibold uppercase tracking-[0.28em] text-brand">pick a starting point</span>
-            <h2 className="mt-4 text-4xl sm:text-5xl">Beautiful Templates</h2>
-            <p className="mt-4 text-sm leading-relaxed text-muted sm:text-base">
+            <span className="eyebrow">pick a starting point</span>
+            <h2 className="mt-4 text-[2.3rem] sm:text-[3.2rem]">Beautiful Templates</h2>
+            <p className="mt-4 text-[15px] leading-relaxed text-muted">
               Each template is a unique interactive experience — perfect for any occasion
             </p>
           </div>
@@ -33,12 +33,14 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="mt-10 flex flex-col items-center gap-2">
-            <Link href="/templates" className="btn-primary px-7 py-3.5">
+          <div className="mt-11 flex flex-col items-center gap-2.5">
+            <Link href="/templates" className="btn-primary group px-7 py-3.5">
               View All Templates
-              <ArrowRight className="h-4 w-4" />
+              <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
             </Link>
-            <p className="text-xs text-muted">{TEMPLATES.length} templates across 10+ occasions</p>
+            <p className="text-[11px] uppercase tracking-[0.16em] text-muted">
+              {TEMPLATES.length} templates across 10+ occasions
+            </p>
           </div>
         </div>
       </section>

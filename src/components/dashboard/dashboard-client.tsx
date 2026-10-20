@@ -112,9 +112,9 @@ export function DashboardClient({ gifts: initialGifts, name }: { gifts: Dashboar
       <div className="border-b border-brand/10 bg-gradient-to-b from-[#FFF5F8] to-white">
         <div className="container-page flex flex-col gap-5 py-10 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-brand">your gifts</p>
-            <h1 className="mt-3 text-4xl">My Dashboard</h1>
-            <p className="mt-2 text-sm text-muted">
+            <p className="eyebrow">your gifts</p>
+            <h1 className="mt-3 text-[2.5rem]">My Dashboard</h1>
+            <p className="mt-2 text-[13.5px] text-muted">
               {name ? `Welcome back, ${name}. ` : ""}Everything you have made, ready to edit or send again.
             </p>
           </div>

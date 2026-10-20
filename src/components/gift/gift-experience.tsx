@@ -7,6 +7,7 @@ import { Volume2, VolumeX } from "lucide-react";
 import type { GiftMusic } from "@/lib/gifts";
 import { getTemplate } from "@/templates/registry";
 import { FloatingHearts } from "@/templates/shared/effects";
+import { LogoMark } from "@/components/site/logo";
 
 export type GiftExperienceData = {
   id: string;
@@ -135,9 +136,10 @@ export function GiftExperience({ gift }: { gift: GiftExperienceData }) {
             <div className="border-t border-white/60 bg-white/70 py-8 text-center backdrop-blur">
               <Link
                 href="/"
-                className="inline-flex items-center gap-1.5 rounded-full border border-brand/20 bg-white px-4 py-2 text-[11px] font-medium text-muted shadow-sm transition hover:border-brand/40 hover:text-brand-dark"
+                className="inline-flex items-center gap-2 rounded-full border border-brand/15 bg-white px-4 py-2 text-[11px] font-medium text-muted shadow-sm transition hover:border-brand/40 hover:text-brand-dark"
               >
-                Made with LoveDigitalGift 💖 Create yours
+                <LogoMark className="h-5 w-5 rounded-[0.4rem]" />
+                Made with LoveDigitalGift · Create yours
               </Link>
             </div>
           </motion.main>

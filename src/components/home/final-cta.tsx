@@ -13,23 +13,23 @@ export function FinalCTA() {
           <div className="pointer-events-none absolute -bottom-12 -right-8 h-48 w-48 rounded-full bg-white/15 blur-2xl" />
 
           <div className="relative">
-            <p className="text-3xl">💝</p>
-            <h2 className="mx-auto mt-4 max-w-2xl text-3xl leading-tight text-white sm:text-5xl">
+            <p className="text-[28px]">💝</p>
+            <h2 className="mx-auto mt-4 max-w-2xl text-[2rem] leading-[1.1] text-white sm:text-[3.15rem]">
               Ready to Create Something Unforgettable?
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-white/85 sm:text-base">
+            <p className="mx-auto mt-5 max-w-xl text-[14px] leading-relaxed text-white/85 sm:text-[15px]">
               Join hundreds of people who have made their loved ones smile with a beautiful digital gift.
             </p>
             <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link
                 href="/templates"
-                className="btn w-full bg-white px-8 py-3.5 text-base text-brand-dark shadow-lg transition hover:-translate-y-0.5 hover:shadow-xl sm:w-auto"
+                className="btn w-full bg-white px-8 py-4 text-[15px] text-brand-dark shadow-lg transition hover:-translate-y-0.5 hover:shadow-xl sm:w-auto"
               >
                 Browse Templates
               </Link>
               <Link
                 href="/dashboard"
-                className="btn w-full border border-white/50 px-8 py-3.5 text-base text-white transition hover:bg-white/10 sm:w-auto"
+                className="btn w-full border border-white/45 px-8 py-4 text-[15px] text-white transition hover:border-white/70 hover:bg-white/10 sm:w-auto"
               >
                 My Dashboard
               </Link>

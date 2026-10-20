@@ -1,4 +1,4 @@
-﻿"""Generate the social preview image and logo PNG used by the app."""
+"""Generate the social preview image and logo PNG used by the app."""
 
 from __future__ import annotations
 
@@ -39,6 +39,16 @@ def heart(draw: ImageDraw.ImageDraw, cx: float, cy: float, size: float, colour) 
     draw.polygon([(cx - r * 0.98, cy - r * 0.05), (cx + r * 0.98, cy - r * 0.05), (cx, cy + r * 1.0)], fill=colour)
 
 
+def mark(draw: ImageDraw.ImageDraw, x: float, y: float, size: float) -> None:
+    """The simple app mark: white squircle with a crimson heart."""
+    draw.rounded_rectangle(
+        [x, y, x + size, y + size],
+        radius=size * 0.28,
+        fill=(255, 255, 255, 238),
+    )
+    heart(draw, x + size / 2, y + size / 2, size * 0.54, (215, 38, 61, 255))
+
+
 def make_og() -> None:
     width, height = 1200, 630
     image = gradient((width, height), (215, 38, 61), (255, 143, 163))
@@ -52,8 +62,8 @@ def make_og() -> None:
     for (cx, cy, size) in [(1080, 160, 54), (130, 130, 40), (1040, 470, 38), (200, 520, 46)]:
         heart(draw, cx, cy, size, (255, 255, 255, 70))
 
-    heart(draw, 96, 96, 62, (255, 255, 255, 235))
-    draw.text((146, 66), "LoveDigitalGift", font=font(FONT_BOLD, 40), fill=(255, 255, 255, 245))
+    mark(draw, 72, 58, 84)
+    draw.text((176, 66), "LoveDigitalGift", font=font(FONT_BOLD, 40), fill=(255, 255, 255, 245))
 
     draw.text((96, 205), "Share love beautifully", font=font(FONT_SERIF, 86), fill=(255, 255, 255, 255))
     draw.text((96, 305), "with a digital gift", font=font(FONT_SERIF, 86), fill=(255, 255, 255, 255))
@@ -81,11 +91,7 @@ def make_logo() -> None:
     image.putalpha(mask)
 
     draw = ImageDraw.Draw(image, "RGBA")
-    heart(draw, size / 2, size / 2 - 10, 250, (255, 255, 255, 235))
-
-    # gift ribbon across the heart
-    draw.rounded_rectangle([120, 236, 392, 266], radius=15, fill=(215, 38, 61, 220))
-    draw.rounded_rectangle([236, 120, 276, 392], radius=20, fill=(215, 38, 61, 210))
+    heart(draw, size / 2, size / 2, 236, (255, 255, 255, 238))
 
     image.save(os.path.join(PUBLIC, "logo.png"), "PNG")
     print("logo.png written")

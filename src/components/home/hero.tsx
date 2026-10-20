@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Check, ChevronDown } from "lucide-react";
+import { ArrowRight, Check, ChevronDown } from "lucide-react";
 import { FloatingHearts } from "@/templates/shared/effects";
 
 const TICKS = [
@@ -20,7 +20,7 @@ function PhoneMockup() {
       <motion.div
         animate={{ y: [0, -10, 0] }}
         transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut" }}
-        className="relative rounded-[2.6rem] border-[9px] border-[#2B1A20] bg-[#2B1A20] shadow-[0_30px_80px_rgba(58,13,22,0.28)]"
+        className="relative rounded-[2.8rem] border-[8px] border-[#2B1A20] bg-[#2B1A20] shadow-[0_36px_90px_-24px_rgba(58,13,22,0.45)]"
       >
         <div className="relative h-[540px] overflow-hidden rounded-[2rem] bg-gradient-to-b from-[#FFF2F7] via-[#FFE6EC] to-[#FFF1F3]">
           <div className="absolute left-1/2 top-2 z-20 h-5 w-24 -translate-x-1/2 rounded-full bg-[#2B1A20]" />
@@ -111,7 +111,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 rounded-full border border-brand/20 bg-white/80 px-4 py-1.5 text-xs font-medium text-brand-dark shadow-sm backdrop-blur"
+            className="inline-flex items-center gap-2 rounded-full border border-brand/15 bg-white/80 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-brand-dark shadow-sm backdrop-blur"
           >
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brand" />
             Create beautiful digital gifts ✨
@@ -121,7 +121,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.08 }}
-            className="mt-6 text-[2.6rem] leading-[1.06] sm:text-6xl lg:text-[4.1rem]"
+            className="mt-7 text-[2.7rem] leading-[1.02] sm:text-[3.75rem] lg:text-[4.4rem]"
           >
             Share Love Beautifully
             <br />
@@ -132,7 +132,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.16 }}
-            className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg"
+            className="mt-6 max-w-[33rem] text-[15px] leading-[1.75] text-muted sm:text-[17px]"
           >
             Create interactive gift websites for your most cherished moments. Add photos, music, and a heartfelt message
             to build a digital keepsake that lasts forever.
@@ -142,12 +142,15 @@ export function Hero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.24 }}
-            className="mt-7 grid max-w-lg gap-2.5 sm:grid-cols-2"
+            className="mt-7 grid max-w-lg gap-2 sm:grid-cols-2"
           >
             {TICKS.map((tick) => (
-              <li key={tick} className="flex items-start gap-2.5 text-sm text-ink/80">
-                <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-soft text-brand-dark">
-                  <Check className="h-3 w-3" strokeWidth={3} />
+              <li
+                key={tick}
+                className="flex items-center gap-2 rounded-2xl border border-brand/10 bg-white/70 px-3 py-2 text-[12.5px] leading-snug text-ink/80 backdrop-blur"
+              >
+                <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-brand-soft text-brand-dark">
+                  <Check className="h-2.5 w-2.5" strokeWidth={3.5} />
                 </span>
                 {tick}
               </li>
@@ -160,26 +163,27 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.32 }}
             className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center"
           >
-            <Link href="/templates" className="btn-primary px-8 py-3.5 text-base">
+            <Link href="/templates" className="btn-primary group px-8 py-4 text-[15px]">
               Create Your Gift Now
+              <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
             </Link>
-            <a href="#how-it-works" className="btn-secondary px-7 py-3.5 text-base">
+            <a href="#how-it-works" className="btn-secondary px-7 py-4 text-[15px]">
               How to Create Your Gift
             </a>
           </motion.div>
 
-          <div className="mt-10 flex items-center gap-3 text-xs text-muted">
+          <div className="mt-10 flex items-center gap-3">
             <div className="flex -space-x-2">
               {["🎂", "💕", "💍", "🎓"].map((emoji) => (
                 <span
                   key={emoji}
-                  className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-brand-soft text-sm"
+                  className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-brand-soft text-sm shadow-sm"
                 >
                   {emoji}
                 </span>
               ))}
             </div>
-            <p>
+            <p className="text-xs leading-snug text-muted">
               <span className="font-semibold text-ink">2,000+ gifts</span> sent to very happy people
             </p>
           </div>

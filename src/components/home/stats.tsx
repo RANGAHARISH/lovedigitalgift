@@ -47,12 +47,12 @@ function StatCard({
 }) {
   const counted = useCountUp(value ?? 0, active);
   return (
-    <div className="rounded-3xl border border-white bg-white/85 px-5 py-6 text-center shadow-softer backdrop-blur">
-      <div className="text-2xl">{emoji}</div>
-      <div className="mt-2 font-display text-3xl font-semibold text-ink sm:text-4xl">
+    <div className="rounded-[1.5rem] border border-brand/10 bg-white/70 px-5 py-6 text-center shadow-[0_2px_12px_rgba(43,26,32,0.05)] backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:border-brand/25 hover:bg-white">
+      <div className="text-[22px]">{emoji}</div>
+      <div className="mt-2 font-display text-[2rem] font-semibold leading-none text-ink sm:text-[2.35rem]">
         {display ?? `${counted.toLocaleString("en-US")}${suffix ?? ""}`}
       </div>
-      <div className="mt-1 text-[11px] font-medium uppercase tracking-[0.16em] text-muted">{label}</div>
+      <div className="mt-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted">{label}</div>
     </div>
   );
 }
